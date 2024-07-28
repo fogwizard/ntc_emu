@@ -1,0 +1,16 @@
+使用说明：
+1.程序依赖hidapi modbus_crc等库，需要自行使用pip安装
+2.如果不带参数运行本程序，模拟模拟10k的电阻，即25摄氏度环境下，10k 3950 NTC的值
+3.使用参数示例：python ntc_emu.py --value 15000
+  示例输出：
+  python ntc_emu.py --value 15000
+  Opening the device
+  Manufacturer: STMicroelectronics
+  Product: STM32 Human interface
+  Serial No: 00000000001A
+  Write ntc value to device, value=15000
+  hw array length=0x41
+  Read the data from device
+  [7, 1, 16, 0, 182, 0, 2, 160, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 39, 17, 0, 0, 0, 2, 0, 0, 0, 0, 113, 121, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Closing the device
+  Done
